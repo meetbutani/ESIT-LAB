@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<body> 
+
+<h2>Javascript if and else</h2>
+
+Number 1: <input type="text" id="m1" name="m1"/>
+<br>    <br> 
+
+<input type="button" value="Check Divisible by 5" onclick="check()"/>
+
+<script>
+
+var a;
+function check()
+{
+a=parseInt(document.getElementById("m1").value);
+  if (a%5==0)
+  {
+     alert(a + " is divisible by 5")
+  }
+  
+  else
+  {
+     alert(a + " is not divisible by 5 ")
+  }
+
+}
+</script>
+
+
+</body>
+</html>

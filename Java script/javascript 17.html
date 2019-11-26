@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<body> 
+
+<h2>Calculate which number is greater</h2>
+
+Number 1 : <input type="text" id="m1" name="m1"/>
+<br>    <br> 
+Number 2 : <input type="text" id="m2" name="m2"/>
+<br>    <br> 
+Number 3 : <input type="text" id="m3" name="m3"/>
+<br>    <br> 
+
+<input type="button" value="Check largest No." onclick="largest()"/>
+
+<script>
+
+var a, b, c;
+function largest()
+
+{
+ a=parseInt(document.getElementById("m1").value);
+ b=parseInt(document.getElementById("m2").value);
+ c=parseInt(document.getElementById("m3").value);
+  if (a > b && a > c)
+  {
+     alert(a + " is largest No.");
+  }
+  
+  else if (b > a && b > c)
+  {
+     alert(b + " is largest No. ");
+  }
+
+  else 
+  {
+     alert(c + " is largest No. ");
+  }
+  }
+   
+</script>
+
+
+</body>
+</html>

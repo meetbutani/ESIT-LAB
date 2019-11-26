@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<body> 
+
+<h2>Javascript Variables</h2>
+
+Number 1: <input type="text" id="m1" name="m1"/>
+<br>    <br>
+Number 2: <input type="text" id="m2" name="m2"/>
+<br>    <br>
+
+<p id="ans"></p>
+<input type="button" value="Addition" onclick="add()"/>
+<input type="button" value="Subtraction" onclick="sub()"/>
+<input type="button" value="Multiplication" onclick="mul()"/>
+<input type="button" value="Division" onclick="div()"/>
+
+<script>
+
+var a, b, result;
+function add()
+{
+a=parseInt(document.getElementById("m1").value)
+b=parseInt(document.getElementById("m2").value)
+result=a + b;
+alert(result);
+}
+</script>
+
+
+<script>
+
+var a, b, result;
+function sub()
+{
+a=document.getElementById("m1")
+b=document.getElementById("m2")
+result=a.value - b.value;
+alert(result);
+}
+</script>
+
+<script>
+
+var a, b, result;
+function mul()
+{
+a=document.getElementById("m1")
+b=document.getElementById("m2")
+result=a.value * b.value;
+alert(result);
+}
+</script>
+
+<script>
+
+var a, b, result;
+function div()
+{
+a=document.getElementById("m1")
+b=document.getElementById("m2")
+result=a.value / b.value;
+alert(result);
+}
+</script>
+
+</body>
+</html>

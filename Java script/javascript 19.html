@@ -1,0 +1,65 @@
+<html>
+<body>
+
+<h2>javascript switch case example</h2>
+
+Enter your grade : <input type="text" id ="grade"/></br>
+
+</br>
+
+<input type="button" value="Check" onclick="getResult()"/>
+
+<script>
+
+
+function getResult()  
+{
+alert("Function is started");
+
+
+var grade = document.getElementById("grade").value;
+alert("Value you entered : "+ grade);
+var result;
+
+alert("Switch case is started");
+switch(grade)
+{
+
+
+case 'A':
+alert("Case A is started");
+result ="A Grade";
+break;
+
+
+case 'B':
+alert("Case B is started");
+result ="B Grade";
+break;
+
+
+
+case 'C':
+alert("Case C is started");
+result ="C Grade";
+break;
+
+
+case 'F':
+alert("Case F is started");
+result ="Fail";
+break;
+
+
+default:
+alert("Default called");
+result="No Grade";
+break;
+}
+alert("Your result is :"+ result);
+}
+</script>
+
+
+</body>
+</html>
